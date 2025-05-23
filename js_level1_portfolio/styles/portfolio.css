@@ -1,0 +1,11 @@
+main {}
+main .design{}
+main .design a{}
+main .design a:nth-child(oven) {}
+main .design a:nth-child(even) {}
+main .design a img{}
+main .design a img:nth-child(oven){}
+main .design a img:nth-child(even){}
+.popup_bg{}
+.popup_bg .contents{}
+.popup_bg .contents img{}
