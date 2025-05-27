@@ -19,13 +19,24 @@ thumbNaila[0].addEventListener('click',function() {
     console.log(this); // 이벤트객체자동인식하는지 확인
     console.log(this.children[0].src);
     console.log(popupBg.children[0].children[0].src); // popupBg의 자식의 자식의 src
-    // popupShow (); // 팝업 출력 함수
+    popupShow (); // 팝업 출력 함수
     popupBg.children[0].children[0].src = this.children[0].src
 })
-thumbNaila[1].addEventListener('click',popupShow)
-thumbNaila[2].addEventListener('click',popupShow)
-function popupShow () {
-    return popupBg.style.display = 'flex' ;
+thumbNaila[1].addEventListener('click',function(){
+    popupShow (this); // 팝업 출력 함수
+})
+thumbNaila[2].addEventListener('click',function(){
+    popupShow (this);
+})
+thumbNaila[2].addEventListener('click',function(){
+    popupShow (this);
+})
+function popupShow (target) {
+    console.log('-------------함수시작위치체크와 에러체크')
+    //console.log(popupBg.children[0].children[0]);
+    popupBg.style.display = 'flex' ;
+    popupBg.children[0].children[0].src = target.children[0].src;
+    return; // 함수 종료
 }
 popupBg.addEventListener('click',popupNo )
 function popupNo () {
