@@ -1,0 +1,40 @@
+main {
+    background: url(https://img.freepik.com/free-vector/dreamy-floral-background_53876-92903.jpg?uid=R193153623&ga=GA1.1.1317079280.1748691180&semt=ais_hybrid&w=740) center;
+    max-width:849px; height:100vh;
+    margin:0 auto;
+}
+main .bg{
+    display:flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    
+}
+main .bg .top{
+    margin:200px auto;
+   
+}
+main .bg .top input {width:100px;}
+main .bg .top input[name='year']{
+    background-color: #fff;
+    width:100px;
+    
+    
+}
+main .bg .top input[name='year'] span {}
+main .bg .top input[name='month']{}
+main .bg .top input[name='month'] span {}
+main .bg .top input[name='day']{}
+main .bg .top input[name='day'] span {}
+main .bg button {
+    background-color: red;
+    border-radius: 20px;
+    line-height: 50px;
+    color:#fff;
+    margin:0 200px;
+    
+}
+main .bg #flower {
+    margin:0 200px;
+    line-height: 50px;
+    background-color: #fff;
+}
