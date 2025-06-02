@@ -9,23 +9,19 @@ main .bg{
     justify-content: center;
     
 }
-main .bg .top{
-    margin:200px auto;
-   
-}
-main .bg .top input {width:100px;}
-main .bg .top input[name='year']{
+main .bg input {width:100px;}
+main .bg input[name='year']{
     background-color: #fff;
     width:100px;
     
     
 }
-main .bg .top input[name='year'] span {}
-main .bg .top input[name='month']{}
-main .bg .top input[name='month'] span {}
-main .bg .top input[name='day']{}
-main .bg .top input[name='day'] span {}
-main .bg button {
+main .bg input[name='year'] span {}
+main .bg input[name='month']{}
+main .bg input[name='month'] span {}
+main .bg input[name='day']{}
+main .bg input[name='day'] span {}
+main #result_btn {
     background-color: red;
     border-radius: 20px;
     line-height: 50px;
@@ -33,7 +29,7 @@ main .bg button {
     margin:0 200px;
     
 }
-main .bg #flower {
+main #flower {
     margin:0 200px;
     line-height: 50px;
     background-color: #fff;

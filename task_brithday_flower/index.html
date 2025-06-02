@@ -6,19 +6,17 @@
     <title>탄생화 꽃말 | Js</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/task_birthday_flower.css">
-    <script src="./scripts/birthday_flower.js"></script>
+    <script src="./scripts/birthday_flower.js" defer></script>
 </head>
 <body>
     <main>
         <div class="bg"> 
-            <div class="top">
             <input type="text" name="year"><span>년</span>
             <input type="text" name="month"><span>월</span>
             <input type="text" name="day"><span>일</span>
-            </div>   
-            <button type="button">탄생화와 꽃말은 ?</button>
-            <p id="flower"><!-- 결과출력 --></p>
         </div>
+        <button type="button" id="result_btn">탄생화와 꽃말은 ?</button>
+        <p id="total"><!-- 결과출력 --></p>
     </main>
 </body>
 </html>

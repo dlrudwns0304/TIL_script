@@ -49,7 +49,18 @@ const birthday_flower = [
         content:'축하, 감사'
     }
 ]
-const flowerBtn = document.querySelector('button')
-flowerBtn.addEventListener('click', function(){
-    return conosle.log(`12월 탄생화는${birthday_flower.flower} 이고 꽃말은 ${birthday_flower.content}`)
-})
+console.log(birthday_flower[0].month)
+console.log(birthday_flower[0].flower)
+console.log(birthday_flower[0].content)
+const flowerBtn = document.querySelector('input[name=month]')
+const resultBtn = document.querySelector('#result_btn')
+const totalBtn = document.querySelector('total')
+console.log(flowerBtn,resultBtn)
+resultBtn.addEventListener('click', birthdayFunc)
+function birthdayFunc () {
+    if(flowerBtn.value >= 1 && flowerBtn.value <= 12) {
+        total.textContent = `${birthday_flower[flowerBtn.value-1].month}월의 탄생화는 ${birthday_flower[flowerBtn.value-1].flower}, 꽃말은 ${birthday_flower[flowerBtn.value-1].content}입니다`
+    }
+
+
+}
