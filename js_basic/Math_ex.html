@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math를 이용해 지금까지 학원에 다닌기간 계산해보기</title>
+    <link rel="stylesheet" href="../js_level1_portfolio/styles/reset.css">
+    <script src="./scripts/Math_ex.js" defer></script>
+    <style>
+        body,html {
+            background: url(https://i.pinimg.com/736x/78/36/9c/78369c045145a518f91f773244cd609e.jpg) no-repeat center ;
+            width:800px; height:800px;
+            margin:0 auto;
+
+        }
+        main {  
+            text-align: center;
+            padding:50px 0
+        }
+        main h1{font-size: 1.875rem; font-weight:700;}
+        main span{font-size:1.25rem; font-weight:500;}
+        main #webdate{
+            
+            margin:20px; padding:5px; width:300px; height:max-content;
+            border-radius: 20px;;
+        }
+        main #date_btn{
+            background-color: orange; width:80px; height:50px;
+            border-radius: 20px; 
+        }
+        main .result{}
+        main .result .date{margin-bottom:20px;}
+        main .result .date em{}
+        main .result .time{}
+        main .result .time em{}
+    </style>
+    
+</head>
+<body>
+    <main>
+        <h1>지금까지 학원에 나온기간</h1>
+        <span>날짜를 선택하세요</span>
+        <input type="date" id="webdate" name="webdate">
+        <button type="button" id="date_btn">계산하기</button>
+        <div class="result">
+            <p class="date">경과 날짜 : <em></em>일</p>
+            <p class="time">경과 시간 : <em></em>시간</p>
+        </div>
+    </main>
+</body>
+</html>
