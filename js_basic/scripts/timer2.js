@@ -1,10 +1,10 @@
-let num = 0; // 0, 400, 800 출력을 위한 변수
+let num = 2; // 0, 400, 800 출력을 위한 변수
 const slideContainer = document.querySelector('.slide_container')
 slideContainer.style.transition = 'transform 0.5s '
 console.log(slideContainer)
 const slideTimer = setInterval(()=>{
-    num++
-    if(num<3){num=1}
+    num--;
+    if(num<0){num=2}
     slideContainer.style.transform= `translateX(-${400*num}px)`
     console.log(`현재 num:${num}, x축값:${num*400}`)
 }, 3000)
