@@ -13,8 +13,7 @@ main .bg {
     background-size:cover; height:100vh; width:100%;
     background-attachment:fixed;
 }
-main .bg1 {background-image:url(images/main_bg_new2.jpg); text-align:center; animation:bg1bg 2s both}
-main .bg1 h1{animation:bg1h1 2.5s ease-out;}
+main .bg1 {background-image:url(images/main_bg_new2.jpg); text-align:center;}
 main .bg2 {background-image:url(images/main_con2_bg.jpg)}
 main .bg3 {background-image:url(images/main_con3_bg.jpg)}
 main .bg4 {background-image:url(images/main_con5_bg-.jpg)}
@@ -27,21 +26,3 @@ footer {display:flex; justify-content:space-around; align-items:center;backgroun
 footer .logo {}
 footer .logo img {}
 footer .copy {color:#aaa; font-size:0.91rem; text-transform:uppercase;}
-@keyframes bg1h1 {
-    from {
-        transform:scale(1.2);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity:1;
-    }
-}
-@keyframes bg1bg {
-    from {
-        transform:scale(1.1)
-    }
-    to{
-        transform:scale(1)
-    }
-}
